@@ -8,3 +8,7 @@ def test_sumo_2_string():
 def test_sumo_valores_vacios():
     resultado = sumar("")
     assert resultado == 0
+
+def test_sumo_numero_y_valor_vacio():
+    resultado = sumar("5,")
+    assert resultado == 5
