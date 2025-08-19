@@ -32,3 +32,7 @@ def sumo_dos_negativos():
 def test_sumo_multiples_valores():
     resultado = sumar("1,2,3,4")
     assert resultado == 10
+
+def test_sumo_multiple_valores_negativos():
+    resultado = sumar("-1,-2,3,4")
+    assert resultado == 4
