@@ -1,8 +1,5 @@
-
 def sumar(cadena):
     if cadena == "":
         return 0
-    if cadena.endswith(","):
-        cadena = cadena[:-1]
-    numeros = map(int, cadena.split(","))
+    numeros = [int(x) for x in cadena.split(",") if x.strip() != ""]
     return sum(numeros)
