@@ -20,3 +20,7 @@ def test_sumo_valor_vacio_y_numero():
 def test_sumo_valor_negativo():
     resultado = sumar("-1,2")
     assert resultado == 1
+
+def test_sumo_negativo_primero():
+    resultado = sumar("-2,1")
+    assert resultado == -1
